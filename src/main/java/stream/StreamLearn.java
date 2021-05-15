@@ -251,8 +251,6 @@ public class StreamLearn {
         System.out.println(collect1.getCount());
 
         System.out.println(employees.stream().map(Employee::getName)
-                .collect(Collectors.joining(",","=","==")));
+                .collect(Collectors.joining(",", "=", "==")));
     }
-
-
 }
