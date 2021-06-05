@@ -14,12 +14,12 @@ public enum EnumTest {
         this.des = des;
     }
 
-    public static String get(Integer no) {
+    public static EnumTest get(Integer no) {
         for (EnumTest value : EnumTest.values()) {
             if (value.getStatus() == no) {
-                return value.des;
+                return value;
             }
         }
-        return "";
+        return null;
     }
 }
