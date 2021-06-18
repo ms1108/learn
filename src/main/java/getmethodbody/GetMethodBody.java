@@ -1,10 +1,7 @@
 package getmethodbody;
 
 import com.thoughtworks.qdox.JavaProjectBuilder;
-import com.thoughtworks.qdox.model.DocletTag;
-import com.thoughtworks.qdox.model.JavaClass;
-import com.thoughtworks.qdox.model.JavaMethod;
-import com.thoughtworks.qdox.model.JavaParameter;
+import com.thoughtworks.qdox.model.*;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -83,8 +80,8 @@ public class GetMethodBody {
         JavaClass cls = builder.getClassByName("enumtest.getEnumByValue.EnumUtil");//从java目录下开始
         List<JavaMethod> methods = cls.getMethods();
         for (JavaMethod method : methods) {
+            //if (method.getName().equals("getEnumBycode"))
             System.out.println(method.getCodeBlock());
         }
-
     }
 }
