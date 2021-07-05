@@ -21,6 +21,18 @@
     </build>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.5.1</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.saasquatch</groupId>-->
+<!--            <artifactId>json-schema-inferrer</artifactId>-->
+<!--            <version>0.1.4</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -31,13 +43,13 @@
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
         </dependency>
-<!--        代码生成-->
+        <!--        代码生成-->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>2.3.20</version>
         </dependency>
-<!--        获取方法体-->
+        <!--        获取方法体-->
         <dependency>
             <groupId>com.thoughtworks.qdox</groupId>
             <artifactId>qdox</artifactId>
