@@ -56,7 +56,11 @@
             <artifactId>json-schema-inferrer</artifactId>
             <version>0.1.4</version>
         </dependency>
-
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>1.6</version>
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
